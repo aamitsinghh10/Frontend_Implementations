@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat eveniet blanditiis eum quis officia, facilis nostrum vero quia, impedit harum aliquid nulla similique nihil alias voluptatem, quisquam vel ex!
+    </p>
+    <!--<button onclick="handleClick();">Click Me</button>-->
+    <button>Click Me</button>
+    <script>
+        //onload event
+        window.onload = function(){
+            alert('The page is loaded');
+        };
+          
+        //click event
+        function handleClick(){
+            alert("I was Clicked");
+        };
+        document.querySelector('button').onclick = handleClick;
+
+        //mouseover event
+        //document.getElementById('para-1').onmouseover = function(){
+           // console.log('mouse is over para');
+        document.getElementById('para-1').addEventListener('mouseover', function(){
+            console.log('I was clicked!');
+        }); 
+    </script>
+</body>
+</html>

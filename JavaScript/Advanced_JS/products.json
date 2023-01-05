@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "Hammer",
+        "description" : "A claw Hammer",
+        "price" : 120,
+        "rating" : {
+            "min": 2,
+            "max": 5
+        }
+    },
+    {
+        "name" : "Video game controller",
+        "description" : "A video game controller",
+        "price" : 15000
+    }
+]
+
+ 

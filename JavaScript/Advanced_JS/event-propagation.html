@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-gp,#div-p,#div-c{
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-gp">
+        <div id="div-p">
+            <div id="div-c">
+                I am child div
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#div-c').addEventListener('click', function(){
+            console.log('div-c Clicked');
+            console.log(event.target);
+            
+        });
+
+        document.querySelector('#div-p').addEventListener('click', function( event ){
+            console.log('div-p Clicked');
+            event.stopPropagation();
+            console.log(event.target);
+        });
+        document.querySelector('#div-gp').addEventListener('click', function(){
+            console.log('div-gp Clicked');
+            console.log(event.target);
+        });
+    </script>
+</body>
+</html>

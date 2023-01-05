@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change font size</title>
+    </head>
+    <body>
+        <p id="p1" class="x">para 1</p>
+        <p id="p2" class="x y">para 2</p>
+        <p id="p3" class="y">para 3</p>
+    </body>
+<script>
+    var para3 = document.getElementById('p3').style.fontSize='2em';
+    console.log(para3);
+</script>
+</html>
+
+
+//question 2
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change font size</title>
+    </head>
+    <body>
+        <p id="p1" class="x">para 1</p>
+        <p id="p2" class="x y">para 2</p>
+        <p id="p3" class="y">para 3</p>
+    </body>
+<script>
+        var elements=document.getElementsByClassName('y');
+        for (var i = 0; i < elements.length; i++) {
+                var element = elements [i];
+                element.style.fontSize = "2em"; 
+        }
+</script>
+
+</html>

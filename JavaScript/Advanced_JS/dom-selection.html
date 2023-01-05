@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eligendi odit similique atque deserunt, quod sit, aperiam, laborum iure quas expedita perspiciatis. Cupiditate, dolorum soluta nulla nesciunt facere deleniti molestias!
+    </p>
+    <div class="xyz">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil sed voluptatum voluptate aliquam. Aspernatur architecto voluptate at dignissimos ex, iure eaque. Ratione mollitia fugit, numquam exercitationem ea quae necessitatibus!
+    </div>
+    <section class="xyz abc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam labore cumque culpa dolor amet, cupiditate corrupti fugiat, vel minima ipsum enim nulla dolore voluptatum? Deleniti rem voluptatibus voluptates id quod.
+    </section>
+    <script>
+        var para1 = document.getElementById('para-1');
+        console.log(para1);
+
+        var xyzElements = document.getElementsByClassName('xyz');
+        console.log(xyzElements);
+        console.log(xyzElements[0]);
+        console.log(xyzElements[1]);
+        console.log(xyzElements.length);
+
+        var query = document.querySelector('.xyz');
+        console.log(query);
+
+        var query1 = document.querySelectorAll('.xyz');
+        console.log(query1);
+    </script>
+</body>
+</html>

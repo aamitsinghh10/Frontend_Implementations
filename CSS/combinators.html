@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendent selector-space is the ascendent descendent combinator*/
+        div a{
+            color: crimson;
+        }
+        /* child selector -> is the parent child combinator*/
+        p > a{
+            font-size: 2em;
+        }
+        /* No space combinator- element which satisfies each individual selector*/
+        p.x{
+            background-color: darkslategray;
+        }
+        /* + ~ - are left you to exploration*/
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tenetur veritatis reiciendis esse nemo accusantium voluptate illo temporibus alias quis quisquam, rem similique delectus, aliquid inventore voluptatibus nisi. Nisi, animi.
+        <p class="x">
+            Para 1
+            <a href="#">Some link</a>
+        </p>
+        <p>
+            Para 2
+            <a href="#">Some link</a>
+        </p>
+    </div>
+    <div class="x">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, veritatis magnam! Nulla nostrum delectus sequi possimus, pariatur tempora totam molestiae cupiditate? Blanditiis beatae corporis quo dicta error quidem quis nostrum!
+
+        <a href="#">Some link</a>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur deleniti sed accusamus laborum aspernatur est beatae officiis soluta necessitatibus minima vitae ab animi delectus, sint cumque maxime, tempora quis quaerat.
+        <p class="x">
+            Para 3
+            <a href="#">Some link</a>
+        </p>
+        <a href="#">Some link</a>
+    </div>
+    <p>
+        Para 4(Outside of div)
+        <a href="#">Some link</a>
+    </p>
+    <a href="#">Some link</a>
+</body>
+</html>
+
+

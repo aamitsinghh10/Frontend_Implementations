@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>Change background color</title>
+    </head>
+    <body>
+        <p id="p1" class="x">para 1</p>
+        <div>
+            <p id="p2" class="x y">para 2</p>
+            <p id="p3" class="y">para 3</p>
+        </div>
+    </body>
+    <script>
+        const nodeList = document.querySelectorAll("div > p.x");
+        nodeList[0].style.backgroundColor = "red"; 
+    </script>
+</html>
