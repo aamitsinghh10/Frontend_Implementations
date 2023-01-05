@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your favourite colour: <input type="text" id="favourite-color" />
+    Enter your favourite city: <input type="text" id="favourite-city" />
+</body>
+<script>
+        let favouriteColor, favouriteCity;
+        document.querySelector('#favourite-color').addEventListener('input', function(){
+        //you can store only strings in local storage
+        favouriteColor = this.value;
+        document.body.style.backgroundColor=favouriteColor;
+        localStorage.setItem('favourites', JSON.stringify({color : favouriteColor,city :favouriteCity}));
+        });
+
+        document.querySelector('#favourite-city').addEventListener('input', function(){
+        //you can store only strings in local storage
+        favouriteCity = this.value;
+        localStorage.setItem('favourites', JSON.stringify({color : favouriteColor,city :favouriteCity}));
+        });
+</script>
+</html>
